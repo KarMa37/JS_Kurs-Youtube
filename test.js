@@ -1,40 +1,18 @@
-var myString = "I'm a 'super' string";
+var str = "hello, world";
+console.log(str);
 
-console.log(myString);
+var str2 = str.slice(2,9);
 
-console.log(myString.length);
+console.log(str2);
 
-console.log(myString.toUpperCase());
-console.log(myString.toLowerCase());
+var str3 = str.slice(2);
 
-console.log(myString.indexOf("string"));
-console.log(myString.indexOf("super"));
+console.log(str3);
 
-if (myString.indexOf("super") === -1) {
-    console.log("It isn't in the string");
-} else {
-    console.log("It start at position "
-        + myString.indexOf("super"));
-}
+var tags = "meat,ham,salami,pork,beaf,chicken";
 
-var string1 = "abc";
-var string2 = "bcd";
+console.log(tags);
 
-console.log(string1 === string2);
-console.log(string1 < string2);
+var tagsArray = tags.split(",");
 
-var string3 = "abc";
-var string4 = "abc";
-
-console.log(string3 === string4);
-
-var string5 = "abc";
-var string6 = "ABC";
-
-console.log(string5 === string6);
-console.log(string5 < string6);
-
-var string7 = "abc";
-var string8 = "ABC";
-
-console.log(string7 === string8.toLowerCase());
+console.log(tagsArray);
