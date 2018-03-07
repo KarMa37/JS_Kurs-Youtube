@@ -1,13 +1,8 @@
-var a = 5;
-var b = "5";
+var a = "a";
+var b = 5;
 
-console.log(a+b);
-console.log(typeof (a + b));
-
-console.log(Math.ceil(5.01));
-console.log(Math.round(7.49));
-console.log(Math.floor(8.8));
-
-console.log(Math.max(7,4,9,8));
-
-console.log(Math.PI);
+if (!isNaN(a)) {
+    console.log("Meaning of life is " + (a * b));
+} else {
+    console.log("That aint even a number");
+}
