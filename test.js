@@ -1,18 +1,25 @@
-var Car = function(maxSpeed, driver) {
-    this.maxSpeed = maxSpeed;
-    this.driver = driver;
-    this.drive = function(speed, time) {
-        console.log(speed * time);
-    };
-    this.logDriver = function() {
-        console.log("Driver name is " + this.driver);
-    };
+var myPastDate = new Date(1545, 11, 2, 10, 30, 59);
+console.log(myPastDate);
+
+var myDate = new Date();
+console.log(myDate);
+
+var myFutureDate = new Date(2515, 0, 31, 10, 30, 59);
+console.log(myFutureDate);
+
+var birthday = new Date(1984, 9, 20, 10, 10);
+var birthday2 = new Date(1984, 9, 20, 10, 10);
+console.log(birthday);
+console.log(birthday.getMonth()); //0-11
+console.log(birthday.getFullYear());
+console.log(birthday.getDate());
+console.log(birthday.getDay()); //0-6
+console.log(birthday.getHours()); //0-23
+console.log(birthday.getTime()); //milisekundy od 1.1.1970
+
+
+if (birthday.getTime() == birthday2.getTime()) {
+    console.log("Daty są takie same");
+} else {
+    console.log("Daty nie są takie same");
 }
-
-var myCar = new Car(70, "Marcin");
-
-
-console.log(myCar.maxSpeed);
-console.log(myCar.driver);
-myCar.drive(30,5);
-myCar.logDriver();
