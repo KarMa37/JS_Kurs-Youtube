@@ -1,25 +1,13 @@
-var myPastDate = new Date(1545, 11, 2, 10, 30, 59);
-console.log(myPastDate);
+var myContentDivs =
+    document.getElementsByClassName("content");
 
-var myDate = new Date();
-console.log(myDate);
+console.log(myContentDivs);
 
-var myFutureDate = new Date(2515, 0, 31, 10, 30, 59);
-console.log(myFutureDate);
+var myH2 = myContentDivs[0].getElementsByTagName("a");
+console.log(myH2);
 
-var birthday = new Date(1984, 9, 20, 10, 10);
-var birthday2 = new Date(1984, 9, 20, 10, 10);
-console.log(birthday);
-console.log(birthday.getMonth()); //0-11
-console.log(birthday.getFullYear());
-console.log(birthday.getDate());
-console.log(birthday.getDay()); //0-6
-console.log(birthday.getHours()); //0-23
-console.log(birthday.getTime()); //milisekundy od 1.1.1970
+myH2[0].innerHTML = "Link 5000";
 
+var H2ID = document.getElementById("aID");
 
-if (birthday.getTime() == birthday2.getTime()) {
-    console.log("Daty są takie same");
-} else {
-    console.log("Daty nie są takie same");
-}
+H2ID.innerHTML = "Link blah blah";
