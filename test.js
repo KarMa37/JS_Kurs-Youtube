@@ -1,13 +1,5 @@
-var myContentDivs =
-    document.getElementsByClassName("content");
+var myTitle = document.getElementById("h2ID");
+myTitle.textContent = "Yo yo yo";
 
-console.log(myContentDivs);
-
-var myH2 = myContentDivs[0].getElementsByTagName("a");
-console.log(myH2);
-
-myH2[0].innerHTML = "Link 5000";
-
-var H2ID = document.getElementById("aID");
-
-H2ID.innerHTML = "Link blah blah";
+var myBody = document.getElementsByTagName("body");
+myBody[0].innerHTML = "<p>Blah blah blah</p>";
