@@ -1,5 +1,12 @@
-var myTitle = document.getElementById("h2ID");
-myTitle.textContent = "Yo yo yo";
+var link = document.getElementById("aID");
 
-var myBody = document.getElementsByTagName("body");
-myBody[0].innerHTML = "<p>Blah blah blah</p>";
+//link.getAttribute("href"); //metoda
+//console.log(link);
+
+link.setAttribute("class", "pie");
+link.setAttribute("alt", "Hello");
+link.className = "ninja";
+console.log(link);
+
+link.href; //właściwość wyrzucająca link
+//(podobnie jak getAttribute, ale tutaj wyrzuca link w całości)
