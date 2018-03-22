@@ -1,6 +1,9 @@
-var parent = document.getElementById("main-nav").getElementsByTagName("ul")[0];
-var child = parent.getElementsByTagName("li")[0];
+var title = document.getElementById("aID");
 
-var removed = parent.removeChild(child);
+title.onclick = function (){
+    alert("you clicked me");
+};
 
-parent.appendChild(removed);
+title.onmouseover = function(){
+    alert("you hovered your mouse over me");
+};
