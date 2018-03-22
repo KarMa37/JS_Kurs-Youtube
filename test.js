@@ -1,5 +1,12 @@
-var link = document.getElementById("aID");
+var newLi = document.createElement("li");
+var newA = document.createElement("a");
 
-link.setAttribute("style", "text-decoration: none; font-size: 12px;");
+var menu = document.getElementById("main-nav").getElementsByTagName("ul")[0];
 
-link.style.fontSize = "20px";
+menu.appendChild(newLi);
+
+newLi.appendChild(newA);
+
+newA.innerHTML = "Blah blah 1";
+
+menu.insertBefore(newLi, menu.getElementsByTagName("li")[0]);
