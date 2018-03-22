@@ -1,12 +1,6 @@
-var newLi = document.createElement("li");
-var newA = document.createElement("a");
+var parent = document.getElementById("main-nav").getElementsByTagName("ul")[0];
+var child = parent.getElementsByTagName("li")[0];
 
-var menu = document.getElementById("main-nav").getElementsByTagName("ul")[0];
+var removed = parent.removeChild(child);
 
-menu.appendChild(newLi);
-
-newLi.appendChild(newA);
-
-newA.innerHTML = "Blah blah 1";
-
-menu.insertBefore(newLi, menu.getElementsByTagName("li")[0]);
+parent.appendChild(removed);
