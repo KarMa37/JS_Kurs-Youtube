@@ -1,9 +1,13 @@
-var title = document.getElementById("aID");
+var content = document.getElementById("content");
+var button = document.getElementById("show-more");
 
-title.onclick = function (){
-    alert("you clicked me");
-};
+button.onclick = function(){
+    if(content.className == "open"){
+        content.className = "";
+        button.innerHTML = "Show more";
+    } else {
+        content.className = "open";
+        button.innerHTML = "Show less";
+    }
 
-title.onmouseover = function(){
-    alert("you hovered your mouse over me");
 };
