@@ -1,12 +1,5 @@
-var myForm = document.forms.myForm;
-var message = document.getElementById("message");
+var myParaJS = document.getElementById("content").getElementsByTagName("p")[5];
+var myParaJQ = $("#content p:last-child");
 
-myForm.onsubmit = function(){
-    if(myForm.name.value == ""){
-        message.innerHTML = "please enter a name";
-        return false;
-    } else{
-        message.innerHTML = "";
-        return true;
-    }
-}
+myParaJQ.css({position: "relative", color: "red"});
+myParaJQ.animate({left: "50px"});
