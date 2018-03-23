@@ -1,31 +1,7 @@
-var myMessage = document.getElementById("message");
+myForm.name.onfocus = function(){
+    myForm.name.style.border = "4px solid pink";
+};
 
-function showMessage(){
-    myMessage.className = "show";
-}
-
-setTimeout(showMessage, 3000);
-
-
-var colourChanger = document.getElementById("colour-changer");
-var colours = ["red", "blue", "green", "pink"];
-var counter = 0;
-
-function changeColour() {
-
-    if (counter >= colours.length) {
-        counter = 0;
-    }
-    colourChanger.style.background = colours[counter];
-    counter++;
-
-}
-
-var myTimer = setInterval(changeColour, 3000);
-
-colourChanger.onclick = function() {
-
-    clearInterval(myTimer);
-    colourChanger.innerHTML = "Timer stopped";
-
+myForm.name.onblur = function(){
+    myForm.name.style.border = "none";
 };
